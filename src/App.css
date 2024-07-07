@@ -1,38 +1,11 @@
-.App {
-  text-align: center;
+.messages {
+    @apply px-3 py-1 max-w-[350px] rounded-xl;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.messages.input {
+    @apply bg-cyan-500 text-right place-self-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messages.output {
+    @apply bg-green-500 text-left place-self-start;
 }
